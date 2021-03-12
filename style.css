@@ -1,0 +1,82 @@
+html {
+    background: url("Images/concert-5568576_1920.jpg") bottom center no-repeat;
+    background-size: cover;
+    font-size: 10px;
+}
+
+html,
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 320px;
+}
+
+.keys {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.key {
+    background: rgba(0, 0, 0, 0.4);
+    border: 0.4rem solid black;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    flex: 1 0 10rem;
+    color: #fff;
+    margin: 1rem;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    text-shadow: 0 0 0.5rem black;
+    transition: all 0.07s ease;
+}
+
+.key:hover {
+    border-color: #ffc600;
+    cursor: pointer;
+}
+
+.key:focus {
+    box-shadow: 0 0 1rem #ffc600;
+    outline: none;
+}
+
+.key--playing {
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+    transform: scale(1.1);
+}
+
+.key__letter {
+    display: block;
+    font-size: 4rem;
+}
+
+.key__sound {
+    color: #ffc600;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1241px) {
+    .keys {
+        align-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 66rem;
+    }
+
+    .key {
+        flex: none;
+        width: calc(33.3333333% - 3.8rem);
+    }
+}
+    background: url(Images/concert-5568576_1920.jpg);
+    
